@@ -1,2 +1,5 @@
-# fannook
-FAN NOOK · 덕질에도 쉼이 필요하니까.
+# FAN NOOK
+
+팬누크 브랜드 웹사이트.
+
+Static HTML, CSS, JavaScript. Published with GitHub Pages.

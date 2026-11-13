@@ -1,0 +1,42 @@
+.guide-page {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+  padding: var(--space-32) var(--space-24);
+  background: var(--white);
+}
+
+.guide-back {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.guide-back img { transform: rotate(180deg); }
+.guide-title h1 { font: 400 var(--size-display)/var(--leading-56) var(--font-display); letter-spacing: -1.5px; }
+.guide-title p { margin-top: var(--space-8); font: 600 var(--size-section)/var(--leading-34) var(--font-body); letter-spacing: -.7px; }
+.guide-faq { display: flex; flex: 1; flex-direction: column; gap: var(--space-24); }
+.guide-faq > .button { margin-top: auto; }
+.guide-answer { padding-top: var(--space-24); border-top: 1px solid var(--guide-divider); }
+.guide-answer h2 { padding-left: 4px; font: 600 var(--size-body)/var(--leading-26) var(--font-body); }
+.guide-answer p { margin-top: var(--space-8); font: 400 var(--size-body-small)/var(--leading-24) var(--font-body); }
+
+@media (min-width: 1200px) {
+  body { background: var(--page-surround); }
+  .guide-page {
+    width: var(--mobile-width);
+    min-height: 812px;
+    margin: 88px auto 0;
+  }
+}
+
+.guide-back {
+  position: relative;
+}
+.guide-back::before {
+  content: '';
+  position: absolute;
+  inset: var(--icon-hit-inset);
+}
